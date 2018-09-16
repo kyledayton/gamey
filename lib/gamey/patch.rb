@@ -1,0 +1,1 @@
+require 'gamey/patch/image'
