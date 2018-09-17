@@ -45,7 +45,6 @@ class PlayerInputSystem < Gamey::System
     def update(dt)
         entities_with_components(COMPONENT_MASK) do |e|
             velocity_c = e.component(VelocityComponent)
-
             velocity_c.velocity = get_move_direction * SPEED
         end
     end
@@ -105,15 +104,12 @@ class MainScene < Gamey::Scene
 
     def spawn_player
         spawn_position = Gamey::Vector2.new( game.resolution[:width]/2, game.resolution[:height]/2 )
-        position = PositionComponent.new spawn_position
-        velocity = VelocityComponent.new
-        image = ImageComponent.new game.assets.image('ruby.png')
 
         player_entity = new_entity
         player_entity.add_component PlayerComponent.new
-        player_entity.add_component position
-        player_entity.add_component velocity
-        player_entity.add_component image
+        player_entity.add_component PositionComponent.new(spawn_position)
+        player_entity.add_component VelocityComponent.new
+        player_entity.add_component ImageComponent.new(game.assets.image('ruby.png'))
     end
 end
 
