@@ -1,0 +1,1 @@
+gem 'gamey', github: 'kyledayton/gamey'
