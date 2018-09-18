@@ -94,6 +94,10 @@ class Gamey::Game
         @@window.show
     end
 
+    def quit
+        @@window.close!
+    end
+
     private
 
     def set_defaults
