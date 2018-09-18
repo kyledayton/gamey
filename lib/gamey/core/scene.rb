@@ -119,4 +119,5 @@ class Gamey::Scene
 end
 
 class Gamey::DummyScene < Gamey::Scene
+    def setup; end
 end
