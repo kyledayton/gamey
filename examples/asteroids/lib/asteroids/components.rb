@@ -1,0 +1,8 @@
+require 'asteroids/components/transform'
+require 'asteroids/components/velocity'
+require 'asteroids/components/aabb'
+require 'asteroids/components/image'
+require 'asteroids/components/player'
+require 'asteroids/components/bullet'
+require 'asteroids/components/asteroid'
+require 'asteroids/components/on_screen'

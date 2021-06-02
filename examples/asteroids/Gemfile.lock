@@ -1,0 +1,20 @@
+GIT
+  remote: git://github.com/kyledayton/gamey.git
+  revision: 47d7998d09a377d4d932560ed95645c59d3cbcf7
+  specs:
+    gamey (0.1.0)
+      gosu (~> 0.13.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    gosu (0.13.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gamey!
+
+BUNDLED WITH
+   1.16.0
